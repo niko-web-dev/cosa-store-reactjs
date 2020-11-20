@@ -3,7 +3,7 @@ import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
 import './slider.scss'
 
-const categoryData = ['24 часа','скидки']
+const categoryData = ['Бесплатная доставка по Москве от 3000 руб','Бесплатная доставка по России от 5000 руб']
 
 const SliderTop = () => {
   const [index] = useState(0)
@@ -28,10 +28,10 @@ const SliderTop = () => {
   return (
     <div className="slider-top">
         <div className="swiper-container">
-          <div className="swiper-wrapper">
+          <div className="swiper-wrapper header__discount-slick">
             {categoryData.map((el,key) => {
                 return(
-                  <div className="swiper-slide" key={key}>
+                  <div className="swiper-slide header__discount" key={key}>
                     {el} 
                   </div>
                 )
