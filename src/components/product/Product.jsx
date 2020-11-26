@@ -1,11 +1,12 @@
 import React from 'react'
 import '../collection/collection.sass'
+import  '../../scss/shop.sass';
 
 const Product = ({item}) => {
   const [hovering, setHover] = React.useState(false)
 
   return (
-    <div className="collection__item shop__props" key={item.id}>
+    <div className="collection__item shop__item" key={item.id}>
       <div className='collection__item-img'
         style={{
           backgroundImage: hovering ? `url(${item.bg})` : `url(${item.hover})`
