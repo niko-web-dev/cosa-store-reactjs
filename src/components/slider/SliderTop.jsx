@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
-import './slider.scss'
+import './slider.sass'
 
 const categoryData = ['Бесплатная доставка по Москве от 3000 руб','Бесплатная доставка по России от 5000 руб']
 

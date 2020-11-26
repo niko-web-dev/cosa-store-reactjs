@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './components/header/Header'
 
-import './App.css'
+import './App.sass'
+
 import Offer from './components/offer/Offer';
 import Collection from './components/collection/Collection';
 import About from './components/about/About';

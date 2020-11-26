@@ -1,6 +1,6 @@
 import React from 'react'
 import '../collection/collection.sass'
-import  '../../scss/shop.sass';
+import  '../../sass/shop.sass';
 
 const Product = ({item}) => {
   const [hovering, setHover] = React.useState(false)
@@ -18,7 +18,7 @@ const Product = ({item}) => {
         {item.name}
       </div>
       <div className="shop__item-price">
-        {item.price}.р
+        {item.price} р.
       </div>
     </div>
   )
