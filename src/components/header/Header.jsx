@@ -22,6 +22,7 @@ const Header = () => {
 
     return (
     <header className={s.header}>
+
         <SliderTop/>
 
         <div className="container">
@@ -40,7 +41,7 @@ const Header = () => {
                   className="header__btn-menu"
                   id="header__btn-menu"
                    style={{
-                       display: (window.innerWidth <= 830) ? `block` : `none`,
+                       display: (window.innerWidth <= 830) ? `block` : `none`
                    }}
               >
                   <div className={menuView ? "bar1 change" : "bar1"}></div>
