@@ -3,9 +3,9 @@ import Product from '../product/Product'
 
 import './collection.sass'
 
-import items from '../../db'
 
-const Collection = () => {
+
+const Collection = ({items}) => {
 
     return (
         <section className="collection">

@@ -19,10 +19,10 @@ const bg = [
   bgImgHover4
 ]
 const items = [
-  {id: '1', name: 'Заколка', price: '1233', bg: `${bg[0]}`, hover: `${bg[1]}`},
-  {id: '2', name: 'Бант', price: '22141', bg: `${bg[2]}`, hover: `${bg[3]}`},
-  {id: '3', name: 'Другой бант', price: '2131', bg: `${bg[4]}`, hover: `${bg[5]}`},
-  {id: '4', name: 'Еще заколка', price: '1111', bg: `${bg[6]}`, hover: `${bg[7]}`},
+  {id: '1', name: 'Заколка', price: '1233', bg: `${bg[0]}`, hover: `${bg[1]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '2', name: 'Бант', price: '22141', bg: `${bg[2]}`, hover: `${bg[3]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '3', name: 'Сарпнчь', price: '2131', bg: `${bg[4]}`, hover: `${bg[5]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '4', name: 'Еще заколка', price: '1111', bg: `${bg[6]}`, hover: `${bg[7]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
 ]
 
 export default items 

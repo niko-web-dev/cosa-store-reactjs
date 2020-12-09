@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Nav = () => {
+const Nav = ({menuView}) => {
   return (
-    <nav className="header__nav" id="header__nav">
+    <nav className={menuView ? "header__nav menu_active" : "header__nav"} id="header__nav">
             
       <div className="header__nav-list">
           <a className="header__nav-link" href="index.html">Главная</a>

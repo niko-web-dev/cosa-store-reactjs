@@ -1,23 +1,30 @@
 import React from 'react';
-import Header from './components/header/Header'
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 import './App.sass'
+import './sass/media.sass'
 
-import Offer from './components/offer/Offer';
-import Collection from './components/collection/Collection';
-import About from './components/about/About';
-import Subscription from './components/subscription/Subscription';
-import Footer from './components/footer/Footer';
+
+import MainPage from "./components/MainPage";
+import ProductPage from "./components/product/ProductPage";
+import ShopPage from "./components/shopPage/ShopPage";
+
+import items from './db'
+import Header from "./components/header/Header";
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Offer/>
-      <Collection/>
-      <About/>
-      <Subscription/>
-      <Footer/>
+        <BrowserRouter>
+            <Header />
+            <Switch>
+                <Route exact path="/" render={() => <MainPage items={items}/>}/>
+                <Route exact path="/shop-page" render={() => <ShopPage items={items}/>}/>
+
+                <Route path="/product/:id" render={() => <ProductPage items={items}/>} />
+            </Switch>
+      </BrowserRouter>
     </div>
   )
 }
