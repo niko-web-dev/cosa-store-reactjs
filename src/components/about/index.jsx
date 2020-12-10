@@ -1,5 +1,4 @@
-import React from 'react';
-import aboutImg from '../../image/about.jpg';
+import aboutImg from '../../images/about.jpg'
 import './about.sass'
 
 const About = () => {

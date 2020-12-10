@@ -2,10 +2,13 @@ import DeliveryLink from '../links/Delivery'
 import Faq from '../links/Faq'
 import Warranty from '../links/Warranty'
 
+import Icon from "../icon"
+
 import './footer.sass'
 
 const Footer = () => {
   return (
+
     <footer className="footer">
         <div className="container">
           <div className="footer-nav">
@@ -19,13 +22,26 @@ const Footer = () => {
                 предложение, пожалуйста, свяжитесь с нами
             </div>
             <div className="footer__bottom-contact">
-                <a href="tel:79197293534">+7 919 729 35 34</a><br/>
+                <a href="tel:79197293534">+779197293534</a><br/>
                 <span>mycosa.acc@gmail.com</span>
             </div>
         
             <div className="footer__bottom-social">
-                <a rel="noreferrer" className="footer__bottom-social-in" href="https://www.instagram.com/cosa_accessories/">&nbsp</a>
-                <a rel="noreferrer" className="footer__bottom-social-pint" href="https://www.pinterest.ru/cosaaccessories/">&nbsp</a>
+                <a
+                    href="https://www.instagram.com/cosa_accessories/"
+                    rel="noreferrer"
+                    style={{
+                        marginRight: 10
+                    }}>
+
+                     <Icon icon="instagram" size="30px"/>
+                </a>
+                <a
+                    href="https://www.pinterest.ru/cosaaccessories/"
+                    rel="noreferrer">
+
+                      <Icon icon="pinterest" size="35px"/>
+                </a>
             </div> 
             </div>
         </div>

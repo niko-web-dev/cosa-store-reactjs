@@ -33,21 +33,34 @@ button
 .container
   max-width: 1280px
   margin: 0 auto
-  padding: 0 15px
+  padding: 0 35px
   width: 100%
 
 .defult__btn
-  border: 1px solid rgba(232,222,219, 0.9)
-  border-radius: 10px
-  padding: 10px 15px
-  letter-spacing: 1.5px
+  font-size: 20px
   background-color: transparent
+  color: $mainColor
+  padding: 10px
+  border: 1px solid #838383
+  display: block
+  width: 250px
+  text-align: center
+  transition: all 0.3s ease
+  border-radius: 20px
   text-transform: uppercase
-  transition: all .3s
-  cursor: pointer
-  outline: none
   &:hover
-      transform: translateY(-10%)
-      background-color: $mainColor
-  & a
-      color: black
+    background-color: $mainColor
+    border: 1px solid transparent
+    color: #fff
+    transform: scale(1.1)
+
+
+@media screen and (max-width: 576px)
+  .container
+    padding: 0 25px
+@media screen and (max-width: 376px)
+  .container
+    padding: 0 15px
+  .defult__btn
+      font-size: 15px
+      width: 145px

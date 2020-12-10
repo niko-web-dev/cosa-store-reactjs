@@ -1,11 +1,11 @@
-import bgImg from './image/img2.jpg'
-import bgImgHover from './image/img3.jpg'
-import bgImg1 from './image/img31.jpg'
-import bgImgHover1 from './image/img32.jpg'
-import bgImg2 from './image/img33.jpg'
-import bgImgHover2 from './image/imgg2.jpg'
-import bgImg3 from './image/imggg3.jpg'
-import bgImgHover4 from './image/imggg4.jpg'
+import bgImg from './images/img2.jpg'
+import bgImgHover from './images/img3.jpg'
+import bgImg1 from './images/img31.jpg'
+import bgImgHover1 from './images/img32.jpg'
+import bgImg2 from './images/img33.jpg'
+import bgImgHover2 from './images/imgg2.jpg'
+import bgImg3 from './images/imggg3.jpg'
+import bgImgHover4 from './images/imggg4.jpg'
 
 
 const bg = [

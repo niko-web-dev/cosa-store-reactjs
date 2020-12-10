@@ -1,14 +1,13 @@
-import React from 'react'
 import { useParams, useHistory } from "react-router-dom"
 
-import "./product.sass"
+import "../ProductCard/product.sass"
 
-const ProductPage = ({items}) => {
+const SingleProductPage = ({ items }) => {
 
     const { id } = useParams()
     const item = items[id - 1]
-    console.log(item)
-    const history = useHistory();
+    const history = useHistory()
+
     return (
         <div className="container">
             <div className="product-page">
@@ -24,4 +23,4 @@ const ProductPage = ({items}) => {
     );
 }
 
-export default ProductPage
+export default SingleProductPage

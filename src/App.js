@@ -1,27 +1,27 @@
-import React from 'react';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import React from 'react'
+
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 
 import './App.sass'
-import './sass/media.sass'
 
-
-import MainPage from "./components/MainPage";
-import ProductPage from "./components/product/ProductPage";
-import ShopPage from "./components/shopPage/ShopPage";
+import IndexPage from "./components/IndexPage"
+import Header from "./components/header"
+import ProductPage from "./components/singleProductPage"
+import ShopPage from "./components/shopPage"
 
 import items from './db'
-import Header from "./components/header/Header";
+import SliderTop from "./components/sliderTop";
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="app">
         <BrowserRouter>
+            <SliderTop/>
             <Header />
             <Switch>
-                <Route exact path="/" render={() => <MainPage items={items}/>}/>
+                <Route exact path="/" render={() => <IndexPage items={items}/>}/>
                 <Route exact path="/shop-page" render={() => <ShopPage items={items}/>}/>
-
                 <Route path="/product/:id" render={() => <ProductPage items={items}/>} />
             </Switch>
       </BrowserRouter>

@@ -2,29 +2,64 @@
 
 
 .offer
-    background-image: url('../../image/bg.jpg')
+    background-image: url('../../images/bg.jpg')
     background-size: cover
-    background-position: center 
-    padding-bottom: 140px   
+    background-position: center
+    &__content
+        max-width: 550px
+        padding: 20px 15px
+        border-radius: 6px
+        background: rgba(247,250,239, 0)
     &__inner
         color: $mainColor
         text-transform: uppercase
-        padding-top: 180px
         font-family: "Futura PT Light"
+        padding: 180px 0
         & h1
-            font-size: 40px
+            font-size: 45px
             font-weight: 700
-            margin-right: 40px
         & p
             font-weight: 400
-            font-size: 31px
-            line-height: 64px
-            margin-bottom: 120px
+            font-size: 29px
+            line-height: 51px
+            margin-bottom: 80px
             letter-spacing: 1px
 
-.offer__inner .offer__btn
-    background-color: $mainColor
-    padding: 10px 40px
-    margin-left: 140px
-    color: #fff
-    display: inline-block
+
+@media screen and (max-width: 1070px)
+    .offer
+        &__content
+            background: rgba(247,250,239, 0.6)
+
+@media screen and (max-width: 926px)
+    .offer
+        &__inner
+            padding: 70px 0
+
+
+@media screen and (max-width: 576px)
+    .offer
+        &__content
+            padding: 15px 5px
+        &__inner
+            padding: 70px 0
+        & h1
+            font-size: 29px
+        & p
+            font-size: 15px
+            line-height: 35px
+            margin-bottom: 55px
+
+
+@media screen and (max-width: 375px)
+    .offer
+        &__content
+            padding: 15px 5px
+        &__inner
+            padding: 70px 0
+        & h1
+            font-size: 19px
+        & p
+            font-size: 10px
+            line-height: 30px
+            margin-bottom: 40px

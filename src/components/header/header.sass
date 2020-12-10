@@ -1,29 +1,24 @@
 @import '../../sass/variables'
 
-
 .header
-    &__discount
-        background-color: rgba(232,222,219, 1)
-        font-size: 18px
-        text-align: center
-        padding: 8px 0
-        color: #fff
-        width: 100%
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
+    position: fixed
+    width: 100%
+    background-color: rgba(255, 255, 255, 0.9)
+    -webkit-box-shadow: 0px 3px 14px 0px rgba(197,147,136, 0.2)
+    -moz-box-shadow: 0px 3px 14px 0px rgba(197,147,136, 0.2)
+    box-shadow: 0px 3px 14px 0px rgba(197,147,136, 0.2)
     &__inner
         display: flex
         justify-content: space-between
         align-items: center
-        padding: 10px 0
+        padding: 20px 0 17px
         position: relative
     &__img
         display: flex
         position: absolute
         left: 0
         & img
-            width: 190px
+            width: 170px
             height: auto
         & div
             color: $mainColor
@@ -35,77 +30,110 @@
     &__logo-img
         width: 160px
     &__btn-menu
+        display: none
         font-size: 33px
         color: $mainColor
         cursor: pointer
     &__nav
         position: absolute
-        right: -25px
+        right: 0
         &-list
-            padding-right: 30px
+            display: flex
+            align-items: center
         &-social
             text-align: center
             margin-top: 50px
     &__nav-link
-        font-size: 18px
+        font-size: 20px
         letter-spacing: 1.5px
-        color: #D6C1B2
+        color: $mainColor
         line-height: 36px
         border: 1px solid transparent
-        border-radius: 7px
-        padding: 8px 10px
+        border-radius: 13px
+        padding: 4px 15px
         transition: all .3s
         &:hover
             border-color: $mainColor
-            color: $mainColor
     &__nav-social
         display: none
         
-.menu_active
-    transform: translateX(0)
 
-.shopping-cart
-    position: absolute
-    right: 0
-    top: 50%
-    transform: translateY(-50%)
 
-.icon-shopping-cart:before 
-    content: "\e905"
-    font-family: 'icomoon' !important
-    font-size: 35px
-    color: $mainColor
 
-//.counter-card
-//    position: absolute
-//    right: 13px
-//    top: 4px
-//    font-size: 14px
-
+// Menu burger
 .bar1,
 .bar2,
 .bar3
-    width: 25px
-    height: 3px
-    background-color: $mainColor
-    margin: 6px 0
+    width: 30px
+    height: 2px
+    background-color: #C59589
+    margin: 7px 0
     transition: 0.3s
     border-radius: 5px
-
 
 .bar1.change
     -webkit-transform: rotate(-45deg) translate(-9px, 6px)
     transform: rotate(-45deg) translate(-5px, 0px)
-
-
 .bar2.change
     opacity: 0
 
-
-/* Rotate last bar */
 .bar3.change
     -webkit-transform: rotate(45deg) translate(-8px, -8px)
     transform: rotate(45deg) translate(-12px, -8px)
+
+
+
+@media screen and (max-width: 830px)
+    .header
+        &__nav
+            position: fixed
+            display: flex
+            flex-direction: column
+            justify-content: center
+            top: 0
+            right: 0
+            width: 40vw
+            height: 100vh
+            overflow: hidden
+            transform: translateX(100%)
+            transition: 0.5s
+            background: #E8DEDB
+            &-list
+                flex-direction: column
+                text-align: center
+                border: none
+                padding-right: 0
+            &-link
+                display: block
+                border: none
+                margin-bottom: 30px
+            &-social
+                display: block
+        &__btn-menu
+            display: block
+            right: 10px
+            top: 50%
+            transform: translateY(-50%)
+            width: 25px
+            height: 25px
+            z-index: 1000
+            position: absolute
+
+@media screen and (max-width: 576px)
+    .header
+        &__img
+            display: none
+@media screen and (max-width: 375px)
+    .header
+        &__nav
+            width: 50vw
+        &__logo-img
+            width: 145px
+
+
+
+.menu_active
+    transform: translateX(0)
 
 
 
