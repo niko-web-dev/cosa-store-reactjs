@@ -5,7 +5,7 @@ import cartImg from '../../images/cart.png'
 
 const CartIcon = () => {
     return (
-        <Link to={"/cart"}>
+        <Link to={"/cart"} className="cartLink">
             <img
                 src={cartImg}
                 alt="Карзина"

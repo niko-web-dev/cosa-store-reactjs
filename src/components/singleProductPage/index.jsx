@@ -1,6 +1,6 @@
 import { useParams, useHistory } from "react-router-dom"
 
-import "../ProductCard/product.sass"
+import "../productCard/product.sass"
 
 const SingleProductPage = ({ items }) => {
 

@@ -2,7 +2,7 @@ import './subscription.sass'
 
 import discount from '../../images/discount.jpg'
 
-import Form from '../form'
+import SubscriptionForm from '../subscriptionForm'
 
 const Subscription = () => {
   return (
@@ -27,7 +27,7 @@ const Subscription = () => {
                     </div>
                 </div>
             </div>
-            <Form/>
+            <SubscriptionForm/>
         </div>
     </section>
   )

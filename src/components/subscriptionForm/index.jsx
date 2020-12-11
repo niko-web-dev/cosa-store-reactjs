@@ -1,4 +1,4 @@
-import './form.sass'
+import './subscriptionForm.sass'
 
 const Form = () => {
   return (

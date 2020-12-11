@@ -11,9 +11,9 @@ const IndexPage = ({ items }) => {
 
                 <Offer/>
                 <Collection items={items}/>
-                {/*<About/>*/}
-                {/*<Subscription/>*/}
-                {/*<Footer/>*/}
+                <About/>
+                <Subscription/>
+                <Footer/>
             </>
         )
 }

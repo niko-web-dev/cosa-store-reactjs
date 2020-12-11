@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 
 import Nav from '../nav'
 
-import logo from '../../images/logo.jpg'
-import headerLogo from '../../images/header.jpg'
+import logo from '../../images/logo.png'
+import logo2 from '../../images/logo2.png'
 
 import './header.sass'
 
@@ -28,7 +28,7 @@ const Header = () => {
                 <div style={{height:40}}></div>
                 <div className="header__inner">
                   <div className="header__img">
-                      <img src={headerLogo} alt="logo" />
+                      <img src={logo2} alt="logo" />
                   </div>
 
                   <div className="header__logo">

@@ -14,6 +14,7 @@
     transition: all .3s ease
     background: transparent
     outline: none
+    margin: 40px 70px
     &:hover
       border-bottom: 1px solid #D6C1B2
       color: $mainColor
@@ -24,7 +25,7 @@
   justify-content: space-between
   align-items: center
   color: $color-black
-  padding: 30px 0
+  padding: 0 0 70px
   font-family: "Futura PT Light"
   display: flex
   justify-content: space-between
@@ -34,32 +35,55 @@
   &-contact
     text-align: center
     color: $color-black
+    font-size: 17px
     line-height: 35px
     text-align: center
   &-contact a
     color: $color-black
+  span
+    font-size: 20px
+  &-social
+    margin-top: 20px
+    a:last-child
+      svg
+        padding-top: 3px
+
+
+@media screen and (max-width: 830px)
+  .footer-nav
+    &__link
+      font-size: 20px
+  .footer__bottom
+    &-text
+      font-size: 18px
+    &-contact
+      font-size: 15px
+      line-height: 30px
+    span
+      font-size: 18px
+
+@media screen and (max-width: 576px)
+  .footer-nav
+    &__link
+      margin: 20px 15px
+      font-size: 15px
+  .footer__bottom
+    flex-direction: column
+    &-text
+      text-align: center
+
+@media screen and (max-width: 320px)
+  .footer-nav
+    &__link
+      font-size: 13px
+  .footer__bottom
+    &-text
+      line-height: 31px
+      margin-bottom: 20px
+
+
+
       
 
 
-.footer__bottom-social-in,
-.footer__bottom-social-fb,
-.footer__bottom-social-pint  
-    margin-right: 10px
-    &::before
-        font-family: 'icomoon'
-        color: #000
-        font-size: 38px
-
-.footer__bottom-social-in
-    &::before
-        content: "\e901"
-
-.footer__bottom-social-fb
-    &::before
-        content: "\e900"
-        
-
-.footer__bottom-social-pint
-    &::before
-        content: "\e904"
 

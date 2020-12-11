@@ -9,7 +9,7 @@ const Nav= ({ menuView }) => {
       <div className="header__nav-list">
           <Link className="header__nav-link" to={'/'}>Главная</Link>
           <Link className="header__nav-link" to={'shop-gage'}>Магазин</Link>
-          <a className="header__nav-link" href="http://cosa-store.ru#about">О нас</a>
+          <a className="header__nav-link" href="/#about">О нас</a>
           <CartIcon/>
           <div className="header__nav-social">
               <a
