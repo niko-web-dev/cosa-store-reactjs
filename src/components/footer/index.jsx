@@ -1,9 +1,6 @@
-import DeliveryLink from '../links/Delivery'
-import Faq from '../links/Faq'
-import Warranty from '../links/Warranty'
+import { DeliveryLink, Faq, Warranty } from '../../components'
 
 import Icon from "../icon"
-
 import './footer.sass'
 
 const Footer = () => {

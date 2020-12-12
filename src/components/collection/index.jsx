@@ -1,4 +1,5 @@
-import ProductCard from '../productCard'
+import { ProductCard } from '../../components'
+
 
 import './collection.sass'
 import {Link} from "react-router-dom";

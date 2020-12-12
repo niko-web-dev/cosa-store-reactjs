@@ -1,11 +1,11 @@
-import bgImg from './images/img2.jpg'
-import bgImgHover from './images/img3.jpg'
-import bgImg1 from './images/img31.jpg'
-import bgImgHover1 from './images/img32.jpg'
-import bgImg2 from './images/img33.jpg'
-import bgImgHover2 from './images/imgg2.jpg'
-import bgImg3 from './images/imggg3.jpg'
-import bgImgHover4 from './images/imggg4.jpg'
+import bgImg from './assets/images/img2.jpg'
+import bgImgHover from './assets/images/img3.jpg'
+import bgImg1 from './assets/images/img31.jpg'
+import bgImgHover1 from './assets/images/img32.jpg'
+import bgImg2 from './assets/images/img33.jpg'
+import bgImgHover2 from './assets/images/imgg2.jpg'
+import bgImg3 from './assets/images/imggg3.jpg'
+import bgImgHover4 from './assets/images/imggg4.jpg'
 
 
 const bg = [
@@ -18,11 +18,51 @@ const bg = [
   bgImg3,
   bgImgHover4
 ]
-const items = [
-  {id: '1', name: 'Заколка', price: '1233', bg: `${bg[0]}`, hover: `${bg[1]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
-  {id: '2', name: 'Бант', price: '22141', bg: `${bg[2]}`, hover: `${bg[3]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
-  {id: '3', name: 'Сарпнчь', price: '2131', bg: `${bg[4]}`, hover: `${bg[5]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
-  {id: '4', name: 'Еще заколка', price: '1111', bg: `${bg[6]}`, hover: `${bg[7]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+export const items = [
+  {id: '1', name: 'Заколка', price: '1233', bg: `${bg[0]}`, hover: `${bg[1]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '2', name: 'Бант', price: '22141', bg: `${bg[2]}`, hover: `${bg[3]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '3', name: 'Сарпнчь', price: '2131', bg: `${bg[4]}`, hover: `${bg[5]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '4', name: 'Еще заколка', price: '1111', bg: `${bg[6]}`, hover: `${bg[7]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
 ]
 
-export default items 
+export  const itemsShopPage = [
+  {id: '1', name: 'Заколка', price: '1233', bg: `${bg[0]}`, hover: `${bg[1]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '2', name: 'Бант', price: '22141', bg: `${bg[2]}`, hover: `${bg[3]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`,text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '3', name: 'Сарпнчь', price: '2131', bg: `${bg[4]}`, hover: `${bg[5]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`,text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '4', name: 'Заколка', price: '1233', bg: `${bg[0]}`, hover: `${bg[1]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '5', name: 'Бант', price: '22141', bg: `${bg[2]}`, hover: `${bg[3]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`,text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '6', name: 'Сарпнчь', price: '2131', bg: `${bg[4]}`, hover: `${bg[5]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`,text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '7', name: 'Заколка', price: '1233', bg: `${bg[0]}`, hover: `${bg[1]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`, text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '8', name: 'Бант', price: '22141', bg: `${bg[2]}`, hover: `${bg[3]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`,text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+  {id: '9', name: 'Бант', price: '22141', bg: `${bg[2]}`, hover: `${bg[3]}`, bg3:`${bg[7]}`, bg4:`${bg[3]}`,text: "fsflkajlksjfal fjlk ajsfjslf poawiofpas fsjflksajlkf fkjslakjflkajs jflksajflkasjfljfaslkfj"},
+]
+
+export const categories = [
+  {
+    id: 1,
+    name: "Скранчи",
+    datafilter: "scranch",
+  },
+  {
+    id: 2,
+    name: "Банты",
+    datafilter: "bants",
+  },
+  {
+    id: 3,
+    name: "Заколки",
+    datafilter: "zakol",
+  },
+  {
+    id: 4,
+    name: "Ободки",
+    datafilter: "obod",
+  },
+  {
+    id: 5,
+    name: "Наборы",
+    datafilter: "nabor",
+  },
+
+]
+

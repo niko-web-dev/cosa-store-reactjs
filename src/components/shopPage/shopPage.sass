@@ -1,0 +1,52 @@
+.shop
+  &__title
+    padding-top: 220px
+    text-align: center
+    color: #595959
+    margin-bottom: 120px
+    font-size: 40px
+    letter-spacing: 1.5px
+    text-transform: uppercase
+  &__inner
+    display: flex
+  &__items
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    a
+      margin-left: auto
+      margin-right: auto
+
+@media screen and (max-width: 576px)
+  .shop
+    &__title
+      margin-bottom: 90px
+    &__inner
+      flex-direction: column
+      .filters
+        flex-direction: initial
+        margin-right: 0
+        justify-content: space-around
+        margin-bottom: 40px
+        button
+          font-size: 19px
+@media screen and (max-width: 450px)
+  .shop
+    &__title
+      margin-bottom: 60px
+    &__inner
+      .filters
+        margin-bottom: 30px
+        button
+          font-size: 16px
+@media screen and (max-width: 375px)
+  .shop
+    &__title
+      margin-bottom: 40px
+    &__inner
+      .filters
+        button
+          font-size: 14px
+
+

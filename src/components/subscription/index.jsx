@@ -1,8 +1,8 @@
 import './subscription.sass'
 
-import discount from '../../images/discount.jpg'
+import discount from '../../assets/images/discount.jpg'
 
-import SubscriptionForm from '../subscriptionForm'
+import { SubscriptionForm } from '../../components'
 
 const Subscription = () => {
   return (
@@ -10,7 +10,7 @@ const Subscription = () => {
         <div className="container">
             <div className="subscription__inner">
                 <div className="subscription__img">
-                    <img src={discount} alt="image"/>
+                    <img src={discount} alt=""/>
                 </div>
                 <div className="subscription__content">
                     <div className="subscription__text-title">

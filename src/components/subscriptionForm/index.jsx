@@ -1,6 +1,6 @@
 import './subscriptionForm.sass'
 
-const Form = () => {
+const SubscriptionForm = () => {
   return (
     <form className="subscription__form">
       <input
@@ -29,4 +29,4 @@ const Form = () => {
   )
 }
 
-export default Form
+export default SubscriptionForm

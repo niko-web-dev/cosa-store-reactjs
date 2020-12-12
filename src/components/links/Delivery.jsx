@@ -1,5 +1,5 @@
 import React from 'react'
-import Modal from '../modal'
+import { Modal } from '../../components'
 
 const DeliveryLink = () => {
   const [modalActive, setModalActive] = React.useState(false)

@@ -1,11 +1,6 @@
-import Offer from "./offer"
-import Collection from "./collection"
-import About from "./about"
-import Subscription from "./subscription"
-import Footer from "./footer"
+import { Offer, Collection, About, Subscription, Footer } from '../index'
 
 const IndexPage = ({ items }) => {
-
         return (
             <>
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-import Nav from '../nav'
+import { Nav } from '../../components'
 
-import logo from '../../images/logo.png'
-import logo2 from '../../images/logo2.png'
+import logo from '../../assets/images/logo.png'
+import logo2 from '../../assets/images/logo2.png'
 
 import './header.sass'
 
@@ -19,13 +19,10 @@ const Header = () => {
     }
 
 
-
     return (
         <header className="header">
 
-
             <div className="container">
-                <div style={{height:40}}></div>
                 <div className="header__inner">
                   <div className="header__img">
                       <img src={logo2} alt="logo" />
