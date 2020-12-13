@@ -1,6 +1,6 @@
-import Icon from "../icon"
-import { CartIcon } from "../../components";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+import { CartIcon } from "components"
+import Icon from "../socialIcon"
 
 const Nav= ({ menuView }) => {
   return (

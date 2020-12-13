@@ -1,6 +1,6 @@
-import { DeliveryLink, Faq, Warranty } from '../../components'
+import { DeliveryLink, Faq, Warranty } from 'components'
 
-import Icon from "../icon"
+import SocialIcon from "../socialIcon"
 import './footer.sass'
 
 const Footer = () => {
@@ -29,13 +29,13 @@ const Footer = () => {
                             marginRight: 10
                         }}>
 
-                        <Icon icon="instagram" size="30px"/>
+                        <SocialIcon icon="instagram" size="30px"/>
                     </a>
                     <a
                         href="https://www.pinterest.ru/cosaaccessories/"
                         rel="noreferrer">
 
-                        <Icon icon="pinterest" size="35px"/>
+                        <SocialIcon icon="pinterest" size="35px"/>
                     </a>
                 </div>
             </div>

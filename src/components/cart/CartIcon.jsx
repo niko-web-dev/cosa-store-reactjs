@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import cartImg from '../../assets/images/cart.png'
+import cartImg from 'assets/images/cart.png'
 
 const CartIcon = () => {
     return (
@@ -22,12 +22,11 @@ const CartIcon = () => {
                     top: 4,
                     right: -5,
                     color: "red"
-                }}
-            >
-                0
+                }}>
+                    0
             </span>
         </Link>
-    );
-};
+    )
+}
 
-export default CartIcon;
+export default CartIcon

@@ -1,9 +1,12 @@
-import { Offer, Collection, About, Subscription, Footer } from '../index'
+import { Offer,
+        Collection,
+        About,
+        Subscription,
+        Footer } from '../index'
 
 const IndexPage = ({ items }) => {
         return (
             <>
-
                 <Offer/>
                 <Collection items={items}/>
                 <About/>

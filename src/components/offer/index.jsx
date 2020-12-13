@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom"
+
 import './offer.sass'
-import { Link } from "react-router-dom";
+
 
 const Offer = () => {
   return (

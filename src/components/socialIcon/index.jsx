@@ -1,8 +1,8 @@
 import IcoMoon from "react-icomoon"
 const iconSet = require("./selection.json")
 
-const Icon = ({ ...props }) => {
+const SocialIcon = ({ ...props }) => {
     return <IcoMoon iconSet={iconSet} {...props}  />
 }
 
-export default Icon
+export default SocialIcon

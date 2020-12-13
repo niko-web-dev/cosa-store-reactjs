@@ -1,8 +1,8 @@
 import './subscription.sass'
 
-import discount from '../../assets/images/discount.jpg'
+import discount from 'assets/images/discount.jpg'
 
-import { SubscriptionForm } from '../../components'
+import { SubscriptionForm } from 'components'
 
 const Subscription = () => {
   return (

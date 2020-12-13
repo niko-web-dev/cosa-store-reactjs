@@ -1,4 +1,4 @@
-import aboutImg from '../../assets/images/about.jpg'
+import aboutImg from 'assets/images/about.jpg'
 import './about.sass'
 
 const About = () => {

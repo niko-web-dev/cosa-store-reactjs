@@ -1,9 +1,25 @@
+import StoreContext from "../../storeContext"
+
 
 const Cart = () => {
     return (
-        <div>
-            
-        </div>
+        <StoreContext.Consumer>
+            {
+                (dataDb) => {
+                    return (
+                        <div className="cart">
+                            <h2 style={{ paddingTop: 200 }}>
+                                CART
+                            </h2>
+                            <div>
+                                {dataDb.cart}
+                            </div>
+                        </div>
+                    )
+                }
+
+            }
+        </StoreContext.Consumer>
     )
 }
 

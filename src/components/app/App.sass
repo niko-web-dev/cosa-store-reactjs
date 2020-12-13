@@ -3,7 +3,38 @@
     font-family: 'Futura PT Light'
     src:  url('../../assets/fonts/FuturaPTLight.woff2')
 
-  
+.container
+  position: relative
+
+
+.page
+  position: absolute
+  left: 15px
+  right: 15px
+
+
+.page-enter
+  opacity: 0
+  //transform: scale(1.1)
+
+
+.page-enter-active
+  opacity: 1
+  //transform: scale(1)
+  transition: opacity 300ms, transform 300ms
+
+
+.page-exit
+  opacity: 1
+  //transform: scale(1)
+
+
+.page-exit-active
+  opacity: 0
+  //transform: scale(0.9)
+  transition: opacity 300ms, transform 300ms
+
+
 *,
 *::after,
 *::before
@@ -31,7 +62,7 @@ button
   padding: 0
 
 .container
-  max-width: 1320px
+  max-width: 1380px
   margin: 0 auto
   padding: 0 35px
   width: 100%
@@ -48,12 +79,18 @@ button
   transition: all 0.3s ease
   border-radius: 20px
   text-transform: uppercase
+  cursor: pointer
   &:hover
     background-color: $mainColor
     border: 1px solid transparent
     color: #fff
     transform: scale(1.1)
 
+.defult__btn.cart__btn
+  width: 200px
+  display: block
+  margin: 20px auto
+  font-size: 18px
 
 @media screen and (max-width: 576px)
   .container

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-import { Nav } from '../../components'
+import { Nav } from 'components'
 
-import logo from '../../assets/images/logo.png'
-import logo2 from '../../assets/images/logo2.png'
+import logo from 'assets/images/logo.png'
+import logo2 from 'assets/images/logo2.png'
 
 import './header.sass'
 

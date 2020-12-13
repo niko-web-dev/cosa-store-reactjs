@@ -1,9 +1,16 @@
-import { Categories,  ProductCard, Footer} from "../../components"
+import React from "react"
+
+import { Categories,
+    ProductCard,
+    Footer } from "components"
 
 import './shopPage.sass'
 
 
-const ShopPage = ({ items, categories }) => {
+const ShopPage = ({ itemsShopPage, categories }) => {
+
+    const [filter, setFilter] = React.useState(["all"])
+
     return (
         <>
          <section className="shop">
@@ -13,12 +20,20 @@ const ShopPage = ({ items, categories }) => {
                 <div className="container">
                     <div className="shop__inner">
 
-                        <Categories categories={categories}/>
+                        <Categories
+                                    categories={categories}
+                                    setFilter={setFilter}
+                        />
 
                         <div className="shop__items">
                             {
-                                items.map((item) => {
-                                    return  <ProductCard item={item} key={item.id} />
+                                itemsShopPage.map((item) => {
+                                    return  <ProductCard
+                                                    item={item}
+                                                    key={item.id}
+                                                    filter={filter}
+
+                                    />
                                 })
                             }
                         </div>

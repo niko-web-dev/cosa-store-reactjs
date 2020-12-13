@@ -1,9 +1,7 @@
-import { ProductCard } from '../../components'
-
+import { Link } from "react-router-dom"
+import { ProductCard } from 'components'
 
 import './collection.sass'
-import {Link} from "react-router-dom";
-
 
 
 const Collection = ({ items }) => {
