@@ -8,11 +8,11 @@ const Cart = () => {
                 (dataDb) => {
                     return (
                         <div className="cart">
-                            <h2 style={{ paddingTop: 200 }}>
-                                CART
+                            <h2 style={{ paddingTop: 200, textAlign: 'center' }}>
+                                Корзина
                             </h2>
                             <div>
-                                {dataDb.cart}
+                                {/* {dataDb.cart} */}
                             </div>
                         </div>
                     )
